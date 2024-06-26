@@ -14,7 +14,6 @@ from tqdm.auto import tqdm
 from transformers import LlamaTokenizerFast
 
 parser = argparse.ArgumentParser()
-# dataset part
 parser.add_argument('--dataset_path', type=str, default="./ms_marco.jsonl", help="File path to the dataset file to evaluate")
 parser.add_argument('--evaluation_model_name', type=str, default="gpt-3.5-turbo-0125", help="The name of the OpenAI model to use for evaluation. We recommend using `gpt-4o-2024-05-13`, `gpt-4-0125-preview`, or `gpt-3.5-turbo-0125`. See https://platform.openai.com/docs/models.")
 parser.add_argument('--target_model_name', type=str, default=None, help="Name of the model being evaluated. e.g., `meta-llama/Meta-Llama-3-70B-Instruct` or `meta-llama/Meta-Llama-3-8B-Instruct`.")
